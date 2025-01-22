@@ -1,0 +1,2300 @@
+<html>
+<head>
+<title>Page4</title>
+<meta name="viewport" content="device-width=width, initial-scale=1.0">
+<style>
+
+* {
+margin:0;
+padding:0;
+}
+
+.top-section {
+height:115px;
+width:100%;
+background:navy;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.top-section .top-left {
+color:#fff;
+margin:60px;
+width:21%;
+//background:orange;
+display:flex;
+flex-direction:column;
+}
+
+.top-section .top-left > div {
+width:77%;
+//background:red;
+position:relative;
+}
+
+.top-section .top-left h2 {
+padding:0;
+margin:0;
+font-size:48px;
+}
+
+.top-section .top-left p {
+position:absolute;
+right:0;
+top:58;
+font-size:17px;
+font-weight:bold;
+}
+
+.top-section .top-right {
+width:45%;
+//background:red;
+height:100%;
+margin:200px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.top-section .top-right  > div{
+height:100%;
+width:24%;
+//background:orange;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.top-section .top-right  > div p {
+padding:10px;
+//color:#fff;
+font-family:sans-serif;
+color:#ccc;
+}
+
+.top-section .top-right  > div img {
+width:180px;
+height:73px;
+}
+
+.top-section .top-right  > .tr1 img {
+width:70px;
+height:68px;
+}
+
+.top-section .top-right  > .tr3 img {
+width:150px;
+height:140px;
+margin-top:-25px;
+}
+
+.first-heading-section {
+height:50px;
+width:100%;
+//background:orange;
+margin-top:30px;
+display:flex;
+position:relative;
+}
+
+.first-heading-section p {
+transform:rotate(60deg);
+position:absolute;
+left:40;
+top:10;
+font-size:20px;
+}
+
+.first-heading-section h1 {
+color:red;
+font-family:sans-serif;
+margin-left:60px;
+}
+
+.first-heading-section span {
+color:#000;
+font-family:sans-serif;
+}
+
+.container1 {
+height:550px;
+width:100%;
+//background:orange;
+width:100%;
+box-shadow: 0 -5px 10px #ccc;
+margin-top:10px;
+}
+
+.container1 .con1-heading {
+width:100%;
+font-size:30px;
+height:70px;
+//background:red;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:left;
+}
+
+.container1 .con1-heading span {
+width:5%;
+text-align:center;
+color:#ccc;
+font-weight:Bold;
+cursor:pointer;s
+}
+
+.container1 .con1-heading span.con1-h1 {
+margin-left:20px;
+//background:purple;
+}
+
+.container1 .con1-heading span.con1-h2 {
+margin-left:20px;
+}
+
+.container1 .con1-heading span.active {
+border-bottom:4px solid orange;
+transition:border-bottom 0.5s, color 0.5s;
+color:#000;
+}
+
+
+.container1 .con1-left {
+height:460px;
+width:50%;
+//background:navy;
+display:flex;
+justify-content:center;
+align-items:center;
+float:left;
+}
+
+.container1 .con1-left .con1-left-cir-box {
+position:absolute;
+height:265px;
+width:265px;
+background:#fff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1;
+}
+
+.container1 .con1-left .con1-left-cir-box > div {
+height:210px;
+width:210px;
+//background:orange;
+border-radius:50%;
+border:1px solid #ccc;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-around;
+font-family:sans-serif;
+box-shadow:0 0 5px #ccc;
+padding:5px;
+}
+
+div.mini-line {
+position:absolute;
+height:120px;
+width:1px;
+border:1px dotted orange;
+//background:orange;
+z-index:3;
+top:-55;
+}
+
+.container1 .con1-left .con1-left-cir-box > div > p {
+color:gray;
+font-size:20px;
+}
+
+.container1 .con1-left .con1-left-cir-box > div > div {
+font-size:25px;
+font-weight:bold;
+}
+
+.container1 .con1-left .con1-left-cir-box > div > div.rang-num {
+font-size:25px;
+font-weight:bold;
+color:red;
+}
+
+.container1 .con1-left .con1-left-cir-box > div > h1 {
+border-bottom:3px solid #ccc;
+border-top:3px solid #ccc;
+width:35%;
+font-size:35px;
+text-align:center;
+}
+
+.container1 .con1-left .con1-left-img-box {
+width:380px;
+height:380px;
+background:conic-gradient(
+red 0% 35%,
+purple 35% 40%,
+white 40% 50%,
+white 50% 60%,
+orange 60% 100%
+);
+background-size:100% 100%;
+margin-left:-60px;
+border-radius:50%;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+.container1 .con1-right {
+float:right;
+margin-right:80px;
+width:43%;
+//background:purple;
+height:450px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.container1 .con1-right .con1-right-img-box {
+width:620px;
+height:230px;
+background:url('images/rajni2.png');
+background-size:100% 100%;
+margin-top:40px;
+}
+
+.container1 .con1-right table {
+height:150px;
+width:100%;
+font-weight:bold;
+font-size:22px;
+margin-top:-35px;
+font-family:sans-serif;
+}
+
+.container1 .con1-right table tr th {
+background:red;
+color:#fff;
+text-align:Center;
+}
+
+.container1 .con1-right table tr td:nth-child(1)~td {
+text-align:center;
+}
+
+.container1 .con1-right table tr td:nth-child(1) {
+padding-left:17px;
+}
+
+.container1 .con1-right table tr:nth-child(2) td:nth-child(1) {
+color:#02d1ca;
+}
+
+.container1 .con1-right table tr:nth-child(3) td:nth-child(1) {
+color:#e68200;
+}
+
+.container1 .con1-right table tr:nth-child(4) td:nth-child(1) {
+color:#993ed6;
+}
+
+.container1 .con1-right table tr:nth-child(odd) {
+background:#f5f5f5;
+}
+
+
+
+.container2 {
+height:2100px;
+width:100%;
+border-top:3px solid black;
+background:#f5f5f5;
+}
+
+.container2 .con2-heading {
+height:70px;
+width:100%;
+//background:orange;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:20px;
+}
+
+.container2 .con2-heading > div {
+width:10%;
+//border:1px solid #ccc;
+font-size:15px;
+margin:15px;
+height:inherit;
+font-weight:Bold;
+font-family:sans-serif;
+padding:0px 35px;
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.container2 .con2-heading > div h1 {
+border:2px solid #ccc;
+position:absolute;
+bottom:-2;
+width:80%;
+text-align:center;
+padding: 10px 25px;
+border-radius:10px 10px 0px 0px;
+cursor:pointer;
+}
+
+.container2 .con2-heading > div h1.active2 {
+background:#ccc;
+color:gray;
+transition:background 0.5s, color 0.5s;
+}
+
+.container2 .con2-sec1 {
+height:630px;
+width:100%;
+border-top:1px solid #ccc;
+//background:orange;
+display:flex;
+justify-content:space-around;
+align-items:center;
+}
+
+.container2 .con2-sec1 > div {
+height:550px;
+width:22%;
+//background:red;
+}
+
+.container2 .con2-sec1 > div > h2 {
+//display:flex;
+width:92.5%;
+justify-content:space-between;
+align-items:center;
+//background:orange;
+padding:15px;
+font-family:sans-serif;
+}
+
+.container2 .con2-sec1 > div > h2 span {
+//font-size:17px;
+float:left;
+margin-right:5px;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 {
+height:500px;
+width:100%;
+background:white;
+overflow:scroll;
+//display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div {
+height:80px;
+width:86%;
+padding:10px;
+//background:orange;
+margin-top:20px;
+display:flex;
+align-items:center;
+justify-content:space-around;
+box-shadow: 0 0 7px #ccc;
+margin-left:5%;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-img {
+height:55px;
+width:55px;
+background:url('images/hemant.png');
+background-size:100% 100%;
+border-radius:50%;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-img2 {
+background:url('images/babulal.jpeg');
+background-size:100% 100%;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-img3 {
+background:url('images/champai.png');
+background-size:100% 100%;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-img4 {
+background:url('images/sudesh2.jpeg');
+background-size:100% 100%;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-img5 {
+background:url('images/ramwer.jpg');
+background-size:100% 100%;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-name-loc {
+width:50%;
+//background:skyblue;
+height:85%;
+font-family:sans-serif;
+font-size:12px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-name-loc img {
+height:20px;
+width:20px;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-name-loc p {
+margin-top:5px;
+font-size:17px;
+}
+
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-btn {
+height:85%;
+width:30%;
+//background:Red;
+position:relative;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-btn img {
+width:30px;
+height:30px;
+float:left;
+margin-left:10px;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-btn  span {
+margin-left:10px;
+position:absolute;
+top:5;
+font-family:sans-serif;
+font-weight:bold;
+}
+
+.container2 .con2-sec1 > div > .sec1-card1 > div > .neta-btn button {
+font-size:18px;
+background:green;
+color:#fff;
+border:none;
+padding:8px 30px;
+width:100%;
+border-radius:5px;
+}
+
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section {
+height:500px;
+width:100%;
+background:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section > div.chart-main {
+height:400px;
+width:85%;
+//background:purple;
+margin-top:10px;
+display:Flex;
+align-items:center;
+justify-content:center;
+position:relative;
+overflow:hidden;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section > div.chart-main > div {
+margin:5px;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section > div.chart-main > div:nth-child(1) {
+height:5px;
+width:20%;
+background:orange;
+margin-top:-170px;
+position:absolute;
+left:50;
+bottom:173;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section > div.chart-main > div:nth-child(2) {
+height:5px;
+width:20%;
+background:red;
+margin-top:130px;
+transform:rotate(180deg);
+position:absolute;
+left:135;
+top:93;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section > div.chart-main > div:nth-child(3) {
+height:5px;
+width:20%;
+background:gray;
+margin-top:200px;
+position:absolute;
+left:220;
+transform:rotate(180deg);
+top:23;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section > div.chart-main > div:nth-child(4) {
+height:80%;
+border:1px dashed gray;
+position:absolute;
+transform:rotate(90deg);
+margin-top:50px;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section .chart-info {
+height:80px;
+width:85%;
+//background:navy;
+display:Flex;
+justify-content:center;
+align-items:center;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section .chart-info >div {
+height:70px;
+width:30%;
+//background:orange;
+margin:7px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:sans-serif;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section .chart-info >div p{
+height:20px;
+width:20px;
+background:Red;
+margin-right:10px;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section .chart-info >div:nth-child(1) p {
+background:orange;
+}
+
+.container2 .con2-sec1 > .sec1-card2 > div.white-section .chart-info >div:nth-child(3) p {
+background:gray;
+}
+
+.container2 .con2-sec1 > .sec1-card3 > div.white-section {
+height:500px;
+width:100%;
+background:white;
+//display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.container2 .con2-sec1 > .sec1-card3 > div.white-section table {
+width:100%;
+padding:15px;
+font-family:sans-serif;
+font-weight:Bold;
+font-size:20px;
+}
+
+.container2 .con2-sec1 > .sec1-card3 > div.white-section table tr th {
+text-align:center;
+font-size:20px;
+padding:2px 15px;
+background:#f0f0f0;
+}
+
+.container2 .con2-sec1 > .sec1-card3 > div.white-section table tr td:nth-child(1)~td {
+text-align:Center;
+font-weight:normal;
+}
+
+
+.container2 .con2-sec1 > .sec1-card3 > div.white-section table tr td:nth-child(1) {
+font-weight:Bold;
+padding:7px 7px;
+}
+
+.container2 .con2-sec1 > .sec1-card3 > div.white-section table tr:nth-child(odd) td {
+background:#fff4e0;
+}
+
+.container2 .con2-sec1 > .sec1-card3 > div.white-section table tr:nth-child(even) td {
+background:#e6fff8;
+}
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section {
+height:500px;
+width:100%;
+background:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+position:relative;
+}
+
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section .card4-heading-sec {
+height:50px;
+width:100%;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section .card4-heading-sec > div {
+height:50px;
+width:25%;
+//background:navy;
+text-align:center;
+//color:#fff;
+font-size:20px;
+font-family:sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:Bold;
+}
+
+@keyframes ani1 {
+30% {color:pink;}
+50% {font-size:25px;}
+80% {color:navy; letter-spacing:5px;}
+}
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section .card4-heading-sec > div:nth-child(2) {
+font-size:18px;
+color:gray;
+animation:ani1 2s infinite;
+}
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section .card4-con1 {
+width:60%;
+background:url('images/jharkhand.png');
+background-size:100% 100%;
+height:250px;
+margin-top:40px;
+}
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section .card4-left-status {
+height:300px;
+width:23%;
+//background:navy;
+position:absolute;
+left:20;
+top:80;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-around;
+}
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section .card4-left-status > div {
+height:65px;
+width:80%;
+//background:red;
+border-radius:6px;
+border:1px solid #ccc;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+box-shadow: 0 5px 5px #ccc;
+}
+
+
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section .card4-right-status {
+height:300px;
+width:23%;
+//background:navy;
+position:absolute;
+right:20;
+top:80;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-around;
+}
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section .card4-right-status > div {
+height:65px;
+width:80%;
+//background:red;
+border-radius:6px;
+border:1px solid #ccc;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+box-shadow: 0 5px 5px #ccc;
+}
+
+.container2 .con2-sec1 > .sec1-card4 > div.white-section .card4-right-status > div h2 {
+color:orange;
+}
+
+
+
+
+
+
+.container2 .section2 {
+height:300px;
+width:100%;
+//background:orange;
+margin-top:20px;
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+}
+
+.container2 .section2 > .sec2-card1, .sec2-card2, .sec2-card3, .sec2-card4 {
+height:180px;
+width:23%;
+background:#fff;
+box-shadow:0 3px 5px #ccc;
+border-radius:8px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.container2 .section2 > .sec2-card4 {
+margin-right:-20px;
+}
+
+.container2 .section2 > div > div {
+height:180px;
+width:53%;
+//background:orange;
+}
+
+.container2 .section2 > div > div:nth-child(2) {
+width:47%;
+}
+
+.container2 .section2 > div > div:nth-child(1) {
+display:flex;
+justify-content:space-between;
+flex-direction:column;
+position:relative;
+}
+
+.container2 .section2 > div > div:nth-child(1) h2 {
+padding:15px;
+font-family:sans-serif;
+}
+
+.container2 .section2 > div > div:nth-child(1) img {
+height:80px;
+width:80px;
+float:left;
+padding:20px;
+}
+
+.container2 .section2 > div > div:nth-child(1) p {
+padding:0;
+margin:0;
+margin-top:50px;
+font-size:19px;
+font-family:sans-serif;
+}
+
+.container2 .section2 > div > div:nth-child(1) p span {
+font-weight:Bold;
+}
+
+.container2 .section2 > div > div:nth-child(1) .corner {
+height:20px;
+width:20px;
+background:#fff;
+position:absolute;
+top:45%;
+right:-13;
+transform:rotate(45deg);
+border-top:2px solid #ccc;
+border-right:2px solid #ccc;
+}
+
+.container2 .section2 > div > div:nth-child(2) {
+//background:skyblue;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+border-left:2px solid #ccc;
+}
+
+.container2 .section2 > div:nth-child(1) > div:nth-child(2) {
+background:#ffedbf;
+}
+
+.container2 .section2 > div:nth-child(2) > div:nth-child(2) {
+background:#ffe2c9;
+}
+
+.container2 .section2 > div:nth-child(3) > div:nth-child(2) {
+background:#f3ffc9;
+}
+
+.container2 .section2 > div:nth-child(4) > div:nth-child(2) {
+background:#c9efff;
+}
+
+.container2 .section2 > div > div:nth-child(2) h1 {
+font-size:63px;
+font-family:sans-serif;
+}
+
+.container2 .section2 > div:nth-child(1) > div:nth-child(2) h1 {
+color:orange;
+}
+
+.container2 .section2 > div:nth-child(2) > div:nth-child(2) h1 {
+color:red;
+}
+
+.container2 .section2 > div:nth-child(3) > div:nth-child(2) h1 {
+color:green;
+}
+
+.container2 .section2 > div:nth-child(4) > div:nth-child(2) h1 {
+color:navy;
+}
+
+.container2 .section2 > div > div:nth-child(2) h2 {
+font-family:calibri,sans-serif;
+font-size:20px;
+}
+
+
+.container2 .section3 {
+height:600px;
+width:100%;
+//background:orange;
+margin-top:20px;
+display:flex;
+justify-content:space-around;
+align-items:center;
+}
+
+.container2 .section3 .sec3-card1,.sec3-card2, .sec3-card3, .sec3-card4 {
+height:600px;
+width:22%;
+//background:navy;
+}
+
+.container2 .section3 > div > h2 {
+//width:100%;
+padding:0;
+margin:0;
+//background:red;
+padding:15px 0px;
+font-weight:Bold;
+font-size:25px;
+font-family:sans-serif;
+}
+
+.container2 .section3 > div > h2 span {
+margin-right:5px;
+}
+
+.container2 .section3 >div > .sec3-white-box {
+height:500px;
+background:#fff;
+display:Flex;
+flex-direction:column;
+align-items:center;
+border:1px solid #ccc;
+}
+
+.container2 .section3 >div.sec3-card1 > .sec3-white-box .bubble-box {
+height:380px;
+width:85%;
+//background:red;
+margin-top:20px;
+display:flex;
+flex-wrap:wrap;
+//justify-content:space-around;
+} 
+
+.container2 .section3 >div.sec3-card1 > .sec3-white-box .bubble-box > div {
+height:25px;
+width:25px;
+margin:5px;
+background:skyblue;
+border-radius:50%;
+}
+
+.container2 .section3 >div.sec3-card1 > .sec3-white-box .bubble-status-box {
+height:100px;
+width:83%;
+//background:green;
+display:flex;
+justify-content:space-around;
+align-items:center;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
+.container2 .section3 > div.sec3-card1 > .sec3-white-box .bubble-status-box > div {
+height:48px;
+width:30%;
+//background:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:4px;
+}
+
+.container2 .section3 > div.sec3-card1 > .sec3-white-box .bubble-status-box > div  p {
+padding:0;
+margin:0;
+height:20px;
+width:20px;
+background:black;
+border-radius:50%;
+margin-right:6px;
+}
+
+.container2 .section3 > div.sec3-card1 > .sec3-white-box .bubble-status-box > div:nth-child(1)  p {
+background:skyblue;
+}
+
+.container2 .section3 > div.sec3-card1 > .sec3-white-box .bubble-status-box > div:nth-child(2)  p {
+background:orange;
+}
+
+.container2 .section3 > div.sec3-card1 > .sec3-white-box .bubble-status-box > div:nth-child(3)  p {
+background:gray;
+}
+
+.container2 .section3 > div.sec3-card1 > .sec3-white-box .bubble-status-box > div span {
+font-family:sans-serif;
+font-size:17px;
+font-weight:normal;
+}
+
+.container2 .section3 > div.sec3-card2 > .sec3-white-box {
+overflow:scroll;
+}
+
+.container2 .section3 > div.sec3-card2 > .sec3-white-box table {
+width:95%;
+font-size:20px;
+font-family:sans-serif;
+//border:1px solid black;
+border-collapse:collapse;
+height:400px;
+font-family:sans-serif;
+margin-top:20px;
+}
+
+
+.container2 .section3 > div.sec3-card2 > .sec3-white-box table tr {
+margin-top:5px;
+border-bottom:1px solid #ccc;
+}
+
+.container2 .section3 > div.sec3-card2 > .sec3-white-box table tr:nth-child(1) {
+background:#f0f0f0;
+font-weight:Bold;
+}
+
+.container2 .section3 > div.sec3-card2 > .sec3-white-box table tr td{
+padding:5px;
+}
+
+.container2 .section3 > div.sec3-card2 > .sec3-white-box table tr td:nth-child(1) {
+width:60%;
+}
+
+.container2 .section3 > div.sec3-card3 > .sec3-white-box .sec3-result-box {
+height:100px;
+width:90%;
+//background:navy;
+margin-top:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.container2 .section3 > div.sec3-card3 > .sec3-white-box .sec3-result-box > div {
+height:54px;
+width:29%;
+//background:orange;
+display:Flex;
+flex-direction:column;
+align-items:left;
+font-family:sans-serif;
+padding:8px 3px;
+font-size:17px;
+padding-left:10px;
+border-radius:5px;
+background:#f0f0f0;
+font-weight:Bold;
+}
+
+.container2 .section3 > div.sec3-card3 > .sec3-white-box .sec3-result-box > div:nth-child(1) {
+color:green;
+font-weight:Bold;
+}
+
+.container2 .section3 > div.sec3-card3 > .sec3-white-box .sec3-result-box > div:nth-child(2) {
+color:#ff961f;
+}
+
+.container2 .section3 > div.sec3-card3 > .sec3-white-box .sec3-result-box > div:nth-child(3) {
+color:red;
+}
+
+.container2 .section3 > div.sec3-card3 > .sec3-white-box .main-cir {
+height:300px;
+width:300px;
+background:conic-gradient(
+white 0% 0.1%,
+green 0.2% 45.1%,
+white 45% 45.3%,
+#ff961f 44.3% 89%,
+white 89% 89.2%,
+red 88.4% 100%
+);
+margin-top:32px;
+border-radius:50%;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container2 .section3 > div.sec3-card3 > .sec3-white-box .main-cir .whichild {
+height:180px;
+width:180px;
+background:#fff;
+position:absolute;
+border-radius:50%;
+}
+
+
+.container2 .section3 > div.sec3-card4 > .sec3-white-box table {
+width:85%;
+//border:1px solid black;
+border-collapse:collapse;
+font-weight:Bold;
+font-family:sans-serif;
+font-size:20px;
+margin-top:20px;
+}
+
+.container2 .section3 > div.sec3-card4 > .sec3-white-box table tr {
+border-bottom:1px solid #ccc;
+}
+
+.container2 .section3 > div.sec3-card4 > .sec3-white-box table tr:nth-child(1) {
+background:#f0f0f0;
+}
+
+.container2 .section3 > div.sec3-card4 > .sec3-white-box table tr td {
+padding:13px;
+}
+
+.container2 .section3 > div.sec3-card4 > .sec3-white-box .info-box {
+height:100px;
+width:90%;
+//background:green;
+font-size:20px;
+color:gray;
+font-weight:Bold;
+font-family:sans-serif;
+margin-top:30px;
+}
+
+
+.container2 .heading-for-sec4 {
+height:50px;
+width:100%;
+font-size:30px;
+font-weight:Bold;
+font-family:sans-serif;
+//background:red;
+display:Flex;
+justify-content:left;
+align-items:center;
+}
+
+.container2 .heading-for-sec4 p {
+margin-left:40px;
+}
+
+.container2 .heading-for-sec4 p span{
+margin-right:6px;
+}
+
+.container2 .section4 {
+height:300px;
+width:100%;
+display:flex;
+justify-content:space-around;
+align-items:center;
+//background:orange;
+margin-top:40px;
+}
+
+.container2 .section4 > div.con2-sec4 {
+height:250px;
+width:17.5%;
+background:#fff;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.container2 .section4 > div:last-child {
+width:5%;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-top-sec {
+height:40px;
+//width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:20px;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-top-sec h2 {
+font-family:sans-serif;
+font-size:20px;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-top-sec p {
+color:gray;
+font-size:20px;
+margin-top:5px;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec {
+height:167px;
+//background:navy;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white1 {
+display:flex;
+background:#fff;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white1 > .white1-left, .white1-right {
+height:163px;
+width:50%;
+border:1px solid #fff;
+display:flex;
+justify-content:space-around;
+align-items:center;
+flex-direction:column;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white1 > .white1-left > div {
+height:30px;
+width:80%;
+//border:1px solid red;
+color:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white1 > .white1-left > div > div {
+background:green;
+font-size:17px;
+font-weight:Bold;
+font-family:sans-serif;
+height:100%;
+width:77%;
+border-radius:5px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white1 > .white1-left > div > p {
+font-weight:Bold;
+font-family:sans-serif;
+font-size:20px;
+color:green;
+}
+
+
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white1 > .white1-right > div {
+height:30px;
+width:80%;
+//border:1px solid red;
+color:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white1 > .white1-right > div > div {
+background:navy;
+font-size:17px;
+font-weight:Bold;
+font-family:sans-serif;
+height:100%;
+width:77%;
+border-radius:5px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white1 > .white1-right > div > p {
+font-weight:Bold;
+font-family:sans-serif;
+font-size:20px;
+color:navy;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec {
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box {
+height:80px;
+width:90%;
+//background:orange;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box > .img-box {
+height:78px;
+width:78px;
+background:#ccc;
+float:left;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-right:15px;
+margin-left:-5px;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box > .img-bor1
+{
+background:#24c8ff;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box > .img-bor2
+{
+background:orange;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box > .img-bor3
+{
+background:green;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box > .img-bor4
+{
+background:#eaa6ff;
+}
+
+
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box > .img-box > div {
+height:72px;
+width:72px;
+background:#fff;
+border-radius:50%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box > .img-box > div p {
+font-family:sans-serif;
+font-weight:bold;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box > .img-box > div img {
+height:35px;
+width:35px;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box  .name-status-box h2{
+font-family:sans-serif;
+font-size:22px;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-img-name-box  .name-status-box p {
+font-size:20px;
+margin-top:5px;
+font-family:sans-serif;
+color:green;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-btn-box {
+height:70px;
+width:95%;
+//background:green;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-btn-box > .bp-box1, .bp-box2 {
+height:58px;
+width:40%;
+//background:orange;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-around;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-btn-box > div p {
+font-size:17px;
+font-family:sans-serif;
+color:gray;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-btn-box > div button{
+//background:green;
+border:none;
+font-family:sans-serif;
+font-size:17px;
+color:#fff;
+font-weight:bold;
+padding:7px 20px;
+border-radius:8px;
+transition:box-shadow 0.3s;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-btn-box > div button:hover {
+box-shadow:0 3px 5px #ccc;
+cursor:pointer;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-btn-box > div button.bp-left-btn {
+background:#f0f0f0;
+color:#000;
+}
+
+.container2 .section4 > div.con2-sec4 > div.sec4-white-sec > .sec4-btn-box > div button.bp-right-btn {
+background:#fff;
+border:1px solid #ccc;
+color:#000;
+}
+
+.container2 .section4 > div:last-child {
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.container2 .section4 > div:last-child:hover .arrow-box span{
+cursor:pointer;
+opacity:1;
+margin-left:0;
+}
+
+.container2 .section4 > div:last-child .arrow-box {
+width:100%;
+display:Flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.container2 .section4 > div:last-child .arrow-box p {
+font-family:sans-serif;
+font-weight:Bold;
+color:gray;
+}
+
+.container2 .section4 > div:last-child .arrow-box span {
+height:30px;
+width:30px;
+border:2px solid gray;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:3px;
+font-size:20px;
+font-weight:Bold;
+opacity:0;
+margin-left:-40px;
+transition:margin-left 0.5s, opacity 0.5s;
+}
+
+@media (max-width:600px) {
+
+
+.top-section {
+//background:orange;
+height:80px;
+}
+
+.top-section .top-left {
+//background:red;
+width:100%;
+padding:0;
+margin:0;
+height:80px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.top-section .top-left > div {
+width:80%;
+//background:black;
+}
+
+.top-section .top-left > div h2 {
+font-size:23px;
+background:red;
+width:80%;
+text-align:center;
+}
+
+.top-section .top-left > div p {
+width:20%;
+left:180;
+top:25;
+//background:black;
+}
+
+.top-section .top-right {
+display:none;
+}
+
+.first-heading-section {
+//background:orange;
+}
+
+.first-heading-section h1 {
+font-size:25px;
+}
+
+.first-heading-section h1 p {
+font-size:20px;
+}
+
+.container1 {
+//background:orange;
+height:900px;
+}
+
+.container1 .con1-heading {
+//background:red;
+height:50px;
+}
+
+.container1 .con1-heading span {
+width:20%;
+font-size:23px;
+}
+
+.container1 .con1-left {
+width:100%;
+//background:red;
+}
+
+.container1 .con1-left .con1-left-img-box {
+margin:0;
+}
+
+.container1 .con1-right {
+width:100%;
+margin:0;
+}
+
+.container1 .con1-right .con1-right-img-box {
+height:150px;
+width:86%;
+}
+
+.container1 .con1-right table {
+font-size:20px;
+margin-top:12px;
+}
+
+
+.container2 {
+height:3500px;
+background:orange;
+}
+
+.container2 .con2-heading {
+//background:red;
+}
+
+.container2 .con2-heading > div {
+//background:orange;
+width:70%;
+}
+
+.container2 .con2-heading > div h1 {
+font-size:22px;
+}
+
+.container2 .con2-sec1 {
+height:2400px;
+//background:black;
+flex-direction:column;
+}
+
+.container2 .con2-sec1 > div {
+//background:red;
+width:95%;
+}
+
+.container2 .con2-sec1 > div h2 {
+font-size:22px;
+margin-top:0;
+}
+
+.container2 .section2 {
+background:red;
+height:900px;
+flex-direction:column;
+}
+
+.container2 .section2 .sec2-card1, .sec2-card2, .sec2-card3, .sec2-card4 {
+width:95%;
+}
+
+.container2 .section2 .sec2-card4 {
+margin:0;
+padding:0;
+}
+
+.container2 .section2  {
+//background:navy;
+
+}
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="top-section">
+    <div class="top-left">
+         <div>
+           <h2>विधानसभा चुनाव</h2><p>2024</p>
+          </div>
+    </div>
+    <div class="top-right">
+          <div class="tr1">
+               <p>CO POWERED BY</p>
+               <img src="images/somani.png">
+          </div>
+
+         <div class="tr2">
+               <p>SPECIAL PARTNER</p>
+               <img src="images/rajni2.png">
+          </div>
+
+         <div class="tr3">
+               <p>ASSOCIATTE SPONSOR</p>
+               <img src="images/mahin.png">
+          </div>
+    </div>
+</div>
+
+
+<div class="first-heading-section">
+     <h1><p>►</p>महाराष्ट्र-झारखंड नतीजे<span> LIVE</span</h1>
+</div>
+
+<div class="container1">
+   <div class="con1-heading"><span class="con1-h1" id="con1-h1" onclick="sMethod('1')">महाराष्ट्र </span><span class="con1-h2 active"  id="con1-h2" onclick="sMethod('2')"> झारखंड</span></div>
+   <div class="con1-left">
+         
+          <div class="con1-left-img-box">
+          <div class="mini-line"></div>
+         <div class="con1-left-cir-box">
+              <div>
+                  <p>बहुमत</p>
+                  <div class="rang-num">41</div>
+                  <h1>81</h1>
+                  <div>81</div>
+                  <p>बढ़त + जीत</p>
+              </div>
+         </div>
+        </div>
+   </div>
+   <div class="con1-right">
+         <div class="con1-right-img-box"></div>
+          <table>
+                <tr>
+                    <th>गठबंधन</th>
+                    <th>बढ़त</th>
+                    <th>जीत</th>
+                    <th>कुल सीट</th>    
+                 </tr>
+
+                 <tr>
+                    <td>● INDIA</td>
+                    <td>0</td>
+                    <td>56</td>
+                    <td>56</td>
+                 </tr>
+
+                 <tr>
+                    <td>● NDA</td>
+                    <td>0</td>
+                    <td>24</td>
+                    <td>24</td>
+                 </tr>
+
+                 <tr>
+                    <td>● OTH</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                 </tr>
+          </table>
+   </div>
+</div>
+
+
+<div class="container2">
+       <div class="con2-heading"><div><h1 onclick="hMethod('1')" class="active2" id="con2-head1">Maharashtra</h1></div><div><h1 onclick="hMethod('2')" id="con2-head2">Jharkhand</h1></div></div>
+       <div class="con2-sec1">
+            <div>
+                <h2><span>&#x2756;</span> Heavyweights </h2>
+                 <div class="sec1-card1">
+                     <div>
+                          <div class="neta-img"></div>
+                          <div class="neta-name-loc"><h2>Hemant Soren</h2><p><img src='images/loca.png'>Barhait</p></div>
+                          <div class="neta-btn"><img src="images/lotus.png"><span>JMM</span><br><button class="won-lost-btn">Won</button></div>
+                     </div>
+
+                     <div class="sec1-card1">
+                          <div class="neta-img neta-img2"></div>
+                          <div class="neta-name-loc"><h2>Babulal Marandi</h2><p><img src='images/loca.png'>Dhanwar</p></div>
+                          <div class="neta-btn"><img src="images/lotus.png"><span>JMM</span><br><button class="won-lost-btn">Won</button></div>
+                      </div> 
+   
+                     <div class="sec1-card1">
+                          <div class="neta-img neta-img3"></div>
+                          <div class="neta-name-loc"><h2>Champai Soren</h2><p><img src='images/loca.png'>Barhait</p></div>
+                          <div class="neta-btn"><img src="images/lotus.png"><span>JMM</span><br><button class="won-lost-btn">Won</button></div>
+                      </div> 
+   
+                     <div class="sec1-card1">
+                          <div class="neta-img neta-img4"></div>
+                          <div class="neta-name-loc"><h2>Sudesh Mahato</h2><p><img src='images/loca.png'>Barhait</p></div>
+                          <div class="neta-btn"><img src="images/lotus.png"><span>BJP</span><br><button class="won-lost-btn">Lost</button></div>
+                      </div> 
+   
+                     <div class="sec1-card1">
+                          <div class="neta-img neta-img5"></div>
+                          <div class="neta-name-loc"><h2>Rameshwar Oraon</h2><p><img src='images/loca.png'>Barhait</p></div>
+                          <div class="neta-btn"><img src="images/lotus.png"><span>JMM</span><br><button class="won-lost-btn">Won</button></div>
+                      </div> 
+   
+
+           
+                  </div>
+            </div>
+
+            <div class="sec1-card2">
+                 <h2><span>&#x2756;</span>Seat Change</h2>
+                 <div class="white-section">
+                    <div class="chart-main">
+                         <div id="orange-graph"></div>
+                         <div id="red-graph"></div>
+                         <div id="gray-graph"></div>
+                         <div></div>
+                     </div>
+                     <div class="chart-info">
+                          <div><p></p> <h3>I.N.D.I.A</h3></div>
+                          <div><p></p> <h3>NDA</h3></div>
+                          <div><p></p> <h3>OTH</h3></div>
+                     </div>
+                 </div>
+             </div>
+
+            <div class="sec1-card3">
+                 <h2><span>&#x2756;</span>Parties</h2>
+                 <div class="white-section">
+                     <table>
+                         <tr>
+                            <th>Party</th>
+                            <th>Contesting</th>
+                            <th>So far</th>
+                            <th>Results</th>
+                          </tr>
+
+                          <tr>
+                             <td>I.N.D.I.A</td>
+                             <td>81</td>
+                             <td>81</td>
+                             <td>56</td>
+                          </tr>
+
+                          <tr>
+                             <td>NDA</td>
+                             <td>81</td>
+                             <td>81</td>
+                             <td>24</td>
+                          </tr>
+
+                          <tr>
+                             <td>Awaited</td>
+                             <td>81</td>
+                             <td>81</td>
+                             <td>0</td>
+                          </tr>
+
+                     </table>
+                 </div>
+            </div>
+
+            <div class="sec1-card4">
+                 <h2><span>&#x2756;</span>Map</h2>
+                 <div class="white-section">
+                       <div class="card4-heading-sec"><div>2019</div><div>vs</div><div>2024</div></div>
+                       <div class="card4-con1"></div>
+                       <div class="card4-left-status"><div><h2>48</h2><h5>I.N.D.I.A</h5></div><div><h2>27</h2><h5>NDA</h5></div><div><h2>6</h2><h5>OTH</h5></div></div>
+                        <div class="card4-right-status">
+<div><h2>56</h2><h5>I.N.D.I.A</h5></div><div><h2>24</h2><h5>NDA</h5></div><div><h2>1</h2><h5>OTH</h5></div>
+                        </div>
+                  </div>
+            </div>
+
+       </div>
+
+
+
+
+    <div class="section2">
+         <div class="sec2-card1">
+               <div><h2>CROREPATIS</h2><div><img src="images/sack-dollar-solid.svg"><p><span>362</span><br>Contesting</p></div><div class="corner"></div></div>
+               <div>
+                  <h1 id="head1">71</h1>
+                  <h2>MLAs</h2>
+               </div>
+          </div>
+
+         <div class="sec2-card2">
+               <div><h2>GRADUATES</h2><div><img src="images/graduation-cap-solid.svg"><p><span>561</span><br>Contesting</p></div><div class="corner"></div></div>
+               <div>
+                  <h1 id="head2">45</h1>
+                  <h2>MLAs</h2>
+               </div>
+         </div>
+
+         <div class="sec2-card3">
+               <div><h2>CASES</h2><div><img src="images/venus-double-solid.svg"><p><span>332</span><br>Contesting</p></div><div class="corner"></div></div>
+               <div>
+                  <h1 id="head3">42</h1>
+                  <h2>MLAs</h2>
+               </div>
+         </div>
+
+         <div class="sec2-card4">
+               <div><h2>FEMALE</h2><div><img src="images/user-large-solid.svg"><p><span>128</span><br>Contesting</p></div><div class="corner"></div></div>
+               <div>
+                  <h1 id="head4">12</h1>
+                  <h2>MLAs</h2>
+               </div>
+         </div> 
+    </div>
+
+
+
+
+
+<div class="section3">
+     <div class="sec3-card1">
+         <h2><span>&#x2756;</span>Heat Map</h2>
+         <div class="sec3-white-box">
+               <div class="bubble-box" id="bubble-box"></div>
+               <div class="bubble-status-box">
+                    <div><p></p><span>I.N.D.I.A</span></div>
+                    <div><p></p><span>NDA</span></div>
+                    <div><p></p><span>Others</span></div>
+                    <div><p></p><span>Awaited</span></div>
+               </div>
+          </div>
+     </div>
+
+     <div class="sec3-card2">
+        <h2><span>&#x2756;</span>Narrow Margins</h2>
+        <div class="sec3-white-box">
+             <table>
+                 <tr>
+                    <td>Constituency</td>
+                    <td>Leading Party</td>
+                    <td>Vote Margin</td>
+                 </tr>
+
+                 <tr>
+                    <td>Mandu</td>
+                    <td>AJSU</td>
+                    <td>231</td>
+                 </tr>
+
+                 <tr>
+                    <td>Latehar</td>
+                    <td>BJP</td>
+                    <td>434</td>
+                 </tr>
+
+                 <tr>
+                    <td>Chhatarpur</td>
+                    <td>Cong</td>
+                    <td>736</td>
+                 </tr>
+
+                 <tr>
+                    <td>Daltonganj</td>
+                    <td>BJP</td>
+                    <td>890</td>
+                 </tr>
+
+                 <tr>
+                    <td>Kanke</td>
+                    <td>Cong</td>
+                    <td>968</td>
+                 </tr>
+
+                 <tr>
+                    <td>Nirsa</td>
+                    <td>CPIML</td>
+                    <td>1808</td>
+                 </tr>
+
+                 <tr>
+                    <td>Sindri</td>
+                    <td>CPIML</td>
+                    <td>3448</td>
+                 </tr>
+
+                 <tr>
+                    <td>Barkatha</td>
+                    <td>BJP</td>
+                    <td>3660</td>
+                 </tr>
+
+                 <tr>
+                    <td>Giridih</td>
+                    <td>JMM</td>
+                    <td>3838</td>
+                 </tr>
+
+                 <tr>
+                    <td>Simaria</td>
+                    <td>BJP</td>
+                    <td>4001</td>
+                 </tr>
+
+
+              </table>
+        </div>
+     </div>
+
+     <div class="sec3-card3">
+        <h2><span>&#x2756;</span>Vote Share</h2>
+        <div class="sec3-white-box">
+           <div class="sec3-result-box">
+               <div>
+                   <p>I.N.D.I.A</p>
+                   <p>45.3%</p>
+                   <p>(+8.75)</p>
+               </div>
+
+               <div>
+                   <p>NDA</p>
+                   <p>42.3%</p>
+                   <p>(-0.67)</p>
+              </div>
+
+               <div>
+                   <p>OTHERS</p>
+                   <p>12.4%</p>
+                   <p>(+8.08)</p>
+                </div>
+           </div>
+           <div class="main-cir">
+                <div class="whichild"></div>
+           </div>
+        </div>
+     </div>
+
+     <div class="sec3-card4">
+        <h2><span>&#x2756;</span>Bellwether</h2>
+        <div class="sec3-white-box">
+            <table>
+                <tr>
+                   <td>Seats</td>
+                   <td>Leads 2024</td>
+                </tr>
+
+                <tr>
+                   <td>Mahagama</td>
+                   <td>Cong</td>
+                </tr>
+
+                <tr>
+                   <td>Bermo</td>
+                   <td>Cong</td>
+                </tr>
+
+                <tr>
+                   <td>Jamshedpur west</td>
+                   <td>JDU</td>
+                </tr>
+
+                <tr>
+                   <td>Khijri</td>
+                   <td>Cong</td>
+                </tr>
+
+                <tr>
+                   <td>Sisai</td>
+                   <td>JMM</td>
+                </tr>
+
+            </table>
+            <div class="info-box">Any party that wins these seats emerges single largest.</div>
+        </div>
+     </div>
+</div>
+
+
+
+<div class="heading-for-sec4">
+<p><span>&#x2756;</span>By-Election Results</p>
+</div>
+
+<div class="section4">
+   <div class="con2-sec4">
+       <div class="sec4-top-sec"><h2>By-Election Results 2024</h2><p>Vidhan Sabha</p></div>
+       <div class="sec4-white1">
+             <div class="white1-left">
+                 <div><div>CONG</div><p>9</p></div>
+                 <div><div>BJP</div><p>20</p></div>
+                 <div><div>SP</div><p>2</p></div>
+                 <div><div>UDF</div><p>1</p></div>
+             </div>
+
+             <div class="white1-right">
+                 <div><div>AAP</div><p>2</p></div>
+                 <div><div>BADVP</div><p>1</p></div>
+                 <div><div>RLD</div><p>1</p></div>
+                 <div><div>TMC</div><p>6</p></div>
+             </div>
+       </div>
+   </div>
+
+   <div class="con2-sec4">
+       <div class="sec4-top-sec"><h2>Wayanad (Kerala)</h2><p>Lok Sabha</p></div>
+       <div class="sec4-white-sec">
+         <div class="sec4-img-name-box"><div class="img-box img-bor1"><div><img src="images/hand.png"><p>CONG</p></div></div><div class="name-status-box"><h2>Priyanka Gandhi</h2><p>WINS</p></div></div>
+         <div class="sec4-btn-box">
+                <div class="bp-box1">
+                     <p>Status</p>
+                     <button class="bp-left-btn">HOLDS</button>
+                </div>
+
+                <div class="bp-box2">
+                     <p>Status</p>
+                     <button class="bp-right-btn">HOLDS</button>
+                </div>
+         </div>
+       </div>
+   </div>
+
+   <div class="con2-sec4">
+       <div class="sec4-top-sec"><h2>Ghaziabad (Uttar Pradesh)</h2><p>Vidhan Sabha</p></div>
+       <div class="sec4-white-sec">
+          <div class="sec4-img-name-box"><div class="img-box img-bor2"><div><img src="images/lotus.png"><p>BJP</p></div></div><div class="name-status-box"><h2>Sanjeev Sharma</h2><p>WINS</p></div></div>
+          <div class="sec4-btn-box">
+                <div class="bp-box1">
+                     <p>Status</p>
+                     <button class="bp-left-btn">HOLDS</button>
+                </div>
+
+                <div class="bp-box2">
+                     <p>Status</p>
+                     <button class="bp-right-btn">HOLDS</button>
+                </div>
+          </div>
+       </div>
+   </div>
+
+   <div class="con2-sec4">
+       <div class="sec4-top-sec"><h2>Karhal (Uttar Pradesh)</h2><p>Vidhan Sabha</p></div>
+       <div class="sec4-white-sec">
+          <div class="sec4-img-name-box"><div class="img-box img-bor3"><div><img src="images/cicle.png"><p>SP</p></div></div><div class="name-status-box"><h2>Tej Pratap Singh</h2><p>WINS</p></div></div>
+          <div class="sec4-btn-box">
+                <div class="bp-box1">
+                     <p>Status</p>
+                     <button class="bp-left-btn">HOLDS</button>
+                </div>
+
+                <div class="bp-box2">
+                     <p>Status</p>
+                     <button class="bp-right-btn">HOLDS</button>
+                </div>
+           </div>
+       </div>
+   </div>
+
+   <div class="con2-sec4">
+       <div class="sec4-top-sec"><h2>Palakkad (Kerala)</h2><p>Vidhan Sabha</p></div>
+       <div class="sec4-white-sec">
+          <div class="sec4-img-name-box"><div class="img-box img-bor4"><div><img src="images/ufd2.png"><p>UDF</p></div></div><div class="name-status-box"><h2>Rahul Mamkootathil</h2><p>WINS</p></div></div>
+          <div class="sec4-btn-box">
+                <div class="bp-box1">
+                     <p>Status</p>
+                     <button class="bp-left-btn">GAINS</button>
+                </div>
+
+                <div class="bp-box2">
+                     <p>Status</p>
+                     <button class="bp-right-btn">HOLDS</button>
+                </div>
+          </div>
+       </div>
+   </div>
+
+   <div class="con2-sec4">
+       <div class="arrow-box"><p>See All</p><span>&rarr;</span></div>
+   </div>
+</div>
+
+
+
+
+<div class="footer-section"></div>
+
+
+</div>
+
+
+<script>
+
+function sMethod(val) {
+
+     const span1 = document.getElementById(`con1-h${val}`);
+ 
+     if(val == 1) {
+     span1.classList.add('active');
+     document.getElementById('con1-h2').classList.remove('active');
+     } else if(val == 2) {
+     span1.classList.add('active');
+     document.getElementById('con1-h1').classList.remove('active');
+     }
+}
+
+
+
+function hMethod(val) {
+
+     const span1 = document.getElementById(`con2-head${val}`);
+ 
+     if(val == 1) {
+     span1.classList.add('active2');
+     document.getElementById('con2-head2').classList.remove('active2');
+     } else if(val == 2) {
+     span1.classList.add('active2');
+     document.getElementById('con2-head1').classList.remove('active2');
+     }
+}
+
+
+
+const wl_btns = document.querySelectorAll('.won-lost-btn');
+const won_lost_btns = Array.from(wl_btns);
+won_lost_btns.forEach(btn => {
+
+  if(btn.innerHTML.toLowerCase() == 'won') {
+      btn.style.background = 'green';
+  } else if(btn.innerHTML.toLowerCase() == 'lost') {
+      btn.style.background = 'red';
+  }
+
+});
+
+
+
+function show1(count) {
+  var chart1 = document.getElementById('orange-graph');
+  chart1.style.height = count+'px';
+  if(count <= 190) {
+      count++;
+
+       setTimeout( ()=> {
+             show1(count);    
+       },7);
+  }
+
+}
+
+
+
+function show2(count) {
+  const chart2 = document.getElementById('red-graph');
+  chart2.style.height = count+'px';
+  if(count<= 120) {
+     count++;
+
+     setTimeout( ()=> {
+           show2(count);
+     },12);
+  }
+}
+
+
+function show3(count) {
+  const chart3 = document.getElementById('gray-graph');
+  chart3.style.height = count+'px';
+  if(count<= 70) {
+      count++;
+     
+       setTimeout( ()=> {
+           show3(count);
+       },21);
+  }
+}
+
+
+
+function show4(count) {
+   const head1 = document.getElementById('head1');
+   head1.innerHTML = count;
+   if(count<=70) {
+       count++;
+ 
+       setTimeout( ()=> {
+             show4(count);
+       },63);
+   }
+}
+
+
+function show5(count) {
+   const head2 = document.getElementById('head2');
+   head2.innerHTML = count;
+   if(count<=44) {
+       count++;
+
+       setTimeout( ()=> {
+           show5(count);
+       },100);
+   }
+}
+
+
+function show6(count) {
+  const head3 = document.getElementById('head3');
+  head3.innerHTML = count;
+  if(count<=41) {
+     count++;
+   
+     setTimeout( ()=> {
+        show6(count);
+     },110);
+  }
+}
+
+
+function show7(count) {
+  const head4 = document.getElementById('head4');
+  head4.innerHTML = count;
+  if(count<=11) {
+      count++;
+ 
+      setTimeout( ()=> {
+         show7(count);
+      },380);
+  }
+}
+
+
+window.onload = function () {
+    show1(5);
+    show2(5);
+    show3(5);
+    show4(0);
+    show5(0);
+    show6(0);
+    show7(0);
+};
+
+
+
+for(let i = 0; i<81; i++) {
+  const element = document.createElement('div');
+  if(i >55) {
+       element.style.background = 'orange';
+   }
+   if(i >79) {
+       element.style.background = 'gray';
+   }
+  document.getElementById('bubble-box').appendChild(element);
+}
+
+
+
+const leftBpBtns =document.querySelectorAll('.sec4-btn-box > div button.bp-left-btn');
+leftBpBtns.forEach( btn => {
+
+   if(btn.textContent.toLowerCase() == 'holds') {
+        btn.style.background = '#f0f0f0';
+        btn.style.color = '#000';
+   } else if(btn.textContent.toLowerCase() == 'gains') {
+        btn.style.background = 'green';
+        btn.style.color = '#fff';
+   }
+
+});
+
+
+
+
+
+</script>
+</body>
+</html>
